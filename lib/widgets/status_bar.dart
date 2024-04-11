@@ -17,8 +17,8 @@ class _StatusBarState extends State<StatusBar> {
   Widget build(BuildContext context) {
     // Get a list of active sensors based on selected channels
     List<String> activeSensors = widget.selectedChannels.values.toList();
-    print("in status bar");
-    print(activeSensors);
+    //print("in status bar");
+    //print(activeSensors);
     return Container(
       width: MediaQuery.of(context).size.width,
       height: 50.0,

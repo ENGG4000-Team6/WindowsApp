@@ -83,16 +83,16 @@ class _ConfiguringSessionState extends State<ConfiguringSession>
 
   Widget buildRadioButton(String channel, String option) {
     bool isSelected = getSelectionState(channel, option);
-    print("in buildRadio");
+   // print("in buildRadio");
     return Row(
       children: [
         Checkbox(
           value: isSelected,
           onChanged: (value) {
-            print("inon changed");
+       //     print("inon changed");
             setState(() {
               if (value != null) {
-                print("in if");
+           //     print("in if");
                 updateSelectionState(channel, option, value);
                 widget.updateSelectedChannels(channel, option);
               }
